@@ -2,7 +2,6 @@ import { useState } from "react";
 import styles from "./RandomColor.module.css";
 
 const RandomColor = () => {
-    
   const [phillColor, setPhillColor] = useState("#ffffff");
   const [borderColor, setBorderColor] = useState("#ffffff");
 
@@ -15,7 +14,8 @@ const RandomColor = () => {
   };
 
   const handleMainColor = () => {
-    document.body.style.backgroundColor = randomColor();
+    const newColor = randomColor();
+    document.body.style.backgroundColor = newColor;
   };
 
   const handlePhill = () => {
@@ -32,7 +32,7 @@ const RandomColor = () => {
     <>
       <div
         className={styles.random}
-        style={{ borderColor: borderColor, backgroundColor: phillColor }}
+        style={{ backgroundColor: phillColor, borderColor: borderColor }}
       >
         <section className={styles.randomSection}>
           <button className={styles.randomBtn} onClick={handleLine}>

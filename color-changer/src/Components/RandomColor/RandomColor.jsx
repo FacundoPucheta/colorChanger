@@ -35,15 +35,15 @@ const RandomColor = () => {
         style={{ backgroundColor: phillColor, borderColor: borderColor }}
       >
         <section className={styles.randomSection}>
-          <button className={styles.randomBtn} onClick={handleLine}>
+          <button className={styles.mainBtn} onClick={handleLine}>
             <p>- LINE -</p>
           </button>
           <br />
-          <button className={styles.randomBtn} onClick={handleMainColor}>
+          <button className={styles.mainBtn} onClick={handleMainColor}>
             <p>- OUTSIDE -</p>
           </button>
           <br />
-          <button className={styles.randomBtn} onClick={handlePhill}>
+          <button className={styles.mainBtn} onClick={handlePhill}>
             <p> - INSIDE - </p>
           </button>
         </section>

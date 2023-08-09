@@ -1,0 +1,49 @@
+$font-main: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+.random {
+  border-radius: 99px;
+  border: 7px solid;
+  transition: background-color 0.75s, border-color 0.75s;
+
+  button {
+    font-family: $font-main;
+    font-size: small;
+    font-weight: bold;
+    min-height: 40px;
+    min-width: 300px;
+    font-size: 16px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 55px;
+    cursor: pointer;
+    will-change: transform;
+    transition: 1.5s ease-in-out;
+  }
+}
+
+.randomSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10rem;
+  padding-block: 5rem;
+}
+
+.mainBtn {
+  &:hover {
+    background-color: black;
+    color: white;
+    transform: rotate(5deg);
+    border: 2px solid;
+    will-change: background-color;
+  }
+
+  &:active {
+    transition: 0.75s;
+    background-color: yellow;
+    color: black;
+    border-color: transparent;
+  }
+}

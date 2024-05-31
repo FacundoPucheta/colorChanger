@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./RandomColor.module.css";
+import styles from "./RandomColor.module.scss";
 
 const RandomColor = () => {
   const [phillColor, setPhillColor] = useState("#ffffff");
